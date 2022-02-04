@@ -3,10 +3,10 @@ import streamlit as st
 
 from transformers import AutoTokenizer, AutoModelWithLMHead
   
-tokenizer = AutoTokenizer.from_pretrained("gpt2-large")
+tokenizer = AutoTokenizer.from_pretrained("gpt2-medium")
 @st.cache
 def load_model(model_name):
-    model = AutoModelWithLMHead.from_pretrained("gpt2-large")
+    model = AutoModelWithLMHead.from_pretrained("gpt2-medium")
     return model
 
 model = load_model("gpt2-large")
