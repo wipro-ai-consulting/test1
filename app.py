@@ -9,7 +9,7 @@ def load_model(model_name):
     model = AutoModelWithLMHead.from_pretrained("gpt2-medium")
     return model
 
-model = load_model("gpt2-large")
+model = load_model("gpt2-medium")
 
 def infer(input_ids, max_length, temperature, top_k, top_p):
 
